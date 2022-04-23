@@ -3,6 +3,7 @@
 :root {
   --cyan: hsl(179, 62%, 43%);
   --bright-yellow: hsla(71, 73%, 54%, 0.856);
+  --bright-yellow-hover: hsla(71, 67%, 54%, 0.856);
   --light-gray: hsl(204, 43%, 93%);
   --grayish-blue: hsl(218, 22%, 67%);
   --right-section-bg: #4abebd;
@@ -102,6 +103,11 @@ section.left button {
   font-family: 'Karla', sans-serif;
   font-weight: 700;
   font-size: 14px;
+  cursor: pointer;
+}
+
+section.left button:hover {
+  background-color: var(--bright-yellow-hover);
 }
 
 section.left, section.right {
@@ -122,6 +128,13 @@ section.right ul {
 
 section.right ul li {
   padding: 1px 0;
+  cursor: pointer;
+  width: max-content;
+}
+
+
+section.right ul li:hover {
+  text-decoration: underline;
 }
 
 footer {
